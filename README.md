@@ -9,10 +9,10 @@ The datasets are no longer available. The schmea of the data is outlined below f
 
 <b> The review table is for extracting the rating information for each product in Task 1. <b> 
 
-review <br>
-|-- asin: string, same as above <br>
-|-- reviewerID: string, the reviewer id, e.g., ‘A1MIP8H7G33SHC’ <br>
-|-- overall: float, the rating associated with the review, e.g., 5.0 <br>
+  review <br>
+  |-- asin: string, same as above <br>
+  |-- reviewerID: string, the reviewer id, e.g., ‘A1MIP8H7G33SHC’ <br>
+  |-- overall: float, the rating associated with the review, e.g., 5.0 <br>
 
 <b> The product table is used mainly throughout Task 1-4. <b> 
 
