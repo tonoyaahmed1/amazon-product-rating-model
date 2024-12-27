@@ -7,7 +7,7 @@ This project is a group assignment for DSC 102: Systems for Scalable Analytics. 
 
 The datasets are no longer available. The schmea of the data is outlined below for the purpose of understanding the code. 
 
-<b> The review table is for extracting the rating information for each product in Task 1. <\b> 
+<b> The review table is for extracting the rating information for each product in Task 1. <b> 
 
 review <br>
 |-- asin: string, same as above <br>
