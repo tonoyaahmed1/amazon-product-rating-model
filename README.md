@@ -1,6 +1,6 @@
 # amazon-product-rating-model
 
-This project is a group assignment for Systems for Scalable Analytics. The goal of the project is to conduct feature engineering for an Amazon prouduct dataset and use extracted features to train machine learning models using Apache Spark on an DSMLP cluster. The project is separated into eight tasks. The purpose of each task and the data schema are outlined below.
+This project is a group assignment for Systems for Scalable Analytics. The goal of the project is to conduct feature engineering for an Amazon product dataset and use extracted features to train machine learning models using Apache Spark on an DSMLP cluster. The project is separated into eight tasks. The purpose of each task and the data schema are outlined below.
 
 
 ## Dataset description
@@ -68,7 +68,7 @@ The purpose of task 3 is to flatten the variable 'related', which is stored as a
 
 ### Task 4 
 
-The purpose of task 4 is to imputate the null values in the dataset. For the 'price' variable, we created two new columns to imputate the nulls, using the mean and median of all the non-null values. For the 'title' variable, we imputated the nulls using the special string "unknown".
+The purpose of task 4 is to imputate the null values in the dataset. For the 'price' variable, we created two new columns to imputate the nulls, using the mean and median of all the non-null values. For the 'title' variable, we imputed the nulls using the special string "unknown".
 
 ### Task 5 
 
@@ -76,11 +76,11 @@ The purpose of task 5 is to transform the 'title' variable into a fixed-length v
 
 ### Task 6 
 
-The purpose of task 6 is to one-hot-encode the categorical features and PCA on these categories. To perform PCA, we reduced the dimension of each one-hot vector to 15 and put the transformed vecture into a new column. 
+The purpose of task 6 is to one-hot-encode the categorical features and PCA on these categories. To perform PCA, we reduced the dimension of each one-hot vector to 15 and put the transformed vectors into a new column. 
 
 ### Task 7 
 
-The purpose of task 7 is to use the training data and the newly engineered features to train a Decision Tree Regression model to predict the user rating for a product. The max tree depth parameter is set to 5 and all other parameters of the model are left to default values. After generating predictions of the test data, we checked accuracy by calculating the root mean square error (RSME) of the test predictions. 
+The purpose of task 7 is to use the training data and the newly engineered features to train a Decision Tree Regression model to predict the user rating for a product. The max tree depth parameter is set to 5 and all other parameters of the model are left to default values. After generating predictions of the test data, we checked accuracy by calculating the root mean square error (RMSE) of the test predictions. 
 
 ### Task 8 
 
