@@ -1,6 +1,6 @@
 # amazon-product-rating-model
 
-This project is a group assignment for DSC 102: Systems for Scalable Analytics. The goal of the project is to conduct feature engineering for an Amazon prouduct dataset and use extracted features to train machine learning models using Apache Spark on an DSMLP cluster. The project is separated into eight tasks. The purpose of each task is outlined below. 
+This project is a group assignment for Systems for Scalable Analytics. The goal of the project is to conduct feature engineering for an Amazon prouduct dataset and use extracted features to train machine learning models using Apache Spark on an DSMLP cluster. The project is separated into eight tasks. The purpose of each task and the data schema are outlined below.
 
 
 ## Dataset description
@@ -14,7 +14,7 @@ The datasets are no longer available. The schmea of the data is outlined below f
   |-- reviewerID: string, the reviewer id, e.g., ‘A1MIP8H7G33SHC’ <br>
   |-- overall: float, the rating associated with the review, e.g., 5.0 <br>
 
-  The product table is used mainly throughout Task 1-4.   
+  The product table is used mainly throughout Tasks 1-4.   
 
 product <br>
 |-- asin: string, the product id, e.g., ‘B00I8HVV6E’ <br>
@@ -31,7 +31,7 @@ product <br>
 | |-- value: array, array of product ids, e.g., [‘B00I8HW0UK’] <br>
 | | |-- element: string product id , e.g., ‘B00I8HW0UK’ <br>
 
-  The product processed table is used mainly for Task 5-6.   
+  The product processed table is used mainly for Tasks 5-6.   
 
 product_processed <br>
 |-- asin: string, same as above <br>
