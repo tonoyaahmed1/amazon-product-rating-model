@@ -14,7 +14,7 @@ review <br>
 |-- reviewerID: string, the reviewer id, e.g., ‘A1MIP8H7G33SHC’ <br>
 |-- overall: float, the rating associated with the review, e.g., 5.0 <br>
 
-<b> The product table is used mainly throughout Task 1-4. <\b> 
+<b> The product table is used mainly throughout Task 1-4. <b> 
 
 product <br>
 |-- asin: string, the product id, e.g., ‘B00I8HVV6E’ <br>
@@ -31,14 +31,14 @@ product <br>
 | |-- value: array, array of product ids, e.g., [‘B00I8HW0UK’] <br>
 | | |-- element: string product id , e.g., ‘B00I8HW0UK’ <br>
 
-<b> The product processed table is used mainly for Task 5-6. <\b> 
+<b> The product processed table is used mainly for Task 5-6. <b> 
 
 product_processed <br>
 |-- asin: string, same as above <br>
 |-- title: string, title column after imputation, e.g., ‘Intelligent Design Cotton Canvas’ <br>
 |-- category: string, category column after extraction, e.g., ‘Home & Kitchen’ <br>
 
-<b> The following tables are for training and testing <\b>
+<b> The following tables are for training and testing <b>
 
 ml_features_train <br>
 |-- features: SparseVector(float), SparseVector of concatenated <br>
