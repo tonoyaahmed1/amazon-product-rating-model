@@ -5,7 +5,7 @@ This project is a group assignment for Systems for Scalable Analytics. The goal 
 
 ## Dataset description
 
-The datasets are no longer available. The schmea of the data is outlined below for the purpose of understanding the code. 
+The datasets are no longer available. The schema of the data is outlined below for the purpose of understanding the code. 
 
   The review table is for extracting the rating information for each product in Task 1.   
 
@@ -68,7 +68,7 @@ The purpose of task 3 is to flatten the variable 'related', which is stored as a
 
 ### Task 4 
 
-The purpose of task 4 is to imputate the null values in the dataset. For the 'price' variable, we created two new columns to imputate the nulls, using the mean and median of all the non-null values. For teh 'title' variable, we imputated the nulls using the special string "unknown".
+The purpose of task 4 is to imputate the null values in the dataset. For the 'price' variable, we created two new columns to imputate the nulls, using the mean and median of all the non-null values. For the 'title' variable, we imputated the nulls using the special string "unknown".
 
 ### Task 5 
 
