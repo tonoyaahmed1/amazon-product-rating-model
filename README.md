@@ -7,14 +7,14 @@ This project is a group assignment for DSC 102: Systems for Scalable Analytics. 
 
 The datasets are no longer available. The schmea of the data is outlined below for the purpose of understanding the code. 
 
-<b> The review table is for extracting the rating information for each product in Task 1. <b> 
+  The review table is for extracting the rating information for each product in Task 1.   
 
   review <br>
   |-- asin: string, same as above <br>
   |-- reviewerID: string, the reviewer id, e.g., ‘A1MIP8H7G33SHC’ <br>
   |-- overall: float, the rating associated with the review, e.g., 5.0 <br>
 
-<b> The product table is used mainly throughout Task 1-4. <b> 
+  The product table is used mainly throughout Task 1-4.   
 
 product <br>
 |-- asin: string, the product id, e.g., ‘B00I8HVV6E’ <br>
@@ -31,14 +31,14 @@ product <br>
 | |-- value: array, array of product ids, e.g., [‘B00I8HW0UK’] <br>
 | | |-- element: string product id , e.g., ‘B00I8HW0UK’ <br>
 
-<b> The product processed table is used mainly for Task 5-6. <b> 
+  The product processed table is used mainly for Task 5-6.   
 
 product_processed <br>
 |-- asin: string, same as above <br>
 |-- title: string, title column after imputation, e.g., ‘Intelligent Design Cotton Canvas’ <br>
 |-- category: string, category column after extraction, e.g., ‘Home & Kitchen’ <br>
 
-<b> The following tables are for training and testing <b>
+  The following tables are for training and testing  
 
 ml_features_train <br>
 |-- features: SparseVector(float), SparseVector of concatenated <br>
