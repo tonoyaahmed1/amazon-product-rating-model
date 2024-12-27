@@ -9,45 +9,45 @@ The datasets are no longer available. The schmea of the data is outlined below f
 
 <b> The review table is for extracting the rating information for each product in Task 1. <\b> 
 
-review
+review <br>
 |-- asin: string, same as above <br>
-|-- reviewerID: string, the reviewer id, e.g., ‘A1MIP8H7G33SHC’
-|-- overall: float, the rating associated with the review, e.g., 5.0
+|-- reviewerID: string, the reviewer id, e.g., ‘A1MIP8H7G33SHC’ <br>
+|-- overall: float, the rating associated with the review, e.g., 5.0 <br>
 
 <b> The product table is used mainly throughout Task 1-4. <\b> 
 
-product
-|-- asin: string, the product id, e.g., ‘B00I8HVV6E’
-|-- salesRank: map, a map between category and sales rank, e.g., {‘Home & Kitchen’: 796318}
-| |-- key: string, category, e.g., ‘Home & Kitchen’
-| |-- value: integer, rank, e.g., 796318
-|-- categories: array, list of list of categories, e.g., [[‘Home & Kitchen’, ’Artwork’]]
-| |-- element: array, list of categories, e.g., [‘Home & Kitchen’, ’Artwork’]
-| | |-- element: string, category, e.g., ‘Home & Kitchen’
-|-- title: string, title of product, e.g., ‘Intelligent Design Cotton Canvas’
-|-- price: float, price of product, e.g., 27.9
-|-- related: map, related information, e.g., {‘also_viewed’: [‘B00I8HW0UK’]}
-| |-- key: string, the attribute name of the information, e.g., ‘also_viewed’
-| |-- value: array, array of product ids, e.g., [‘B00I8HW0UK’]
-| | |-- element: string product id , e.g., ‘B00I8HW0UK’
+product <br>
+|-- asin: string, the product id, e.g., ‘B00I8HVV6E’ <br>
+|-- salesRank: map, a map between category and sales rank, e.g., {‘Home & Kitchen’: 796318} <br>
+| |-- key: string, category, e.g., ‘Home & Kitchen’ <br>
+| |-- value: integer, rank, e.g., 796318 <br>
+|-- categories: array, list of list of categories, e.g., [[‘Home & Kitchen’, ’Artwork’]] <br>
+| |-- element: array, list of categories, e.g., [‘Home & Kitchen’, ’Artwork’] <br>
+| | |-- element: string, category, e.g., ‘Home & Kitchen’ <br>
+|-- title: string, title of product, e.g., ‘Intelligent Design Cotton Canvas’ <br>
+|-- price: float, price of product, e.g., 27.9 <br>
+|-- related: map, related information, e.g., {‘also_viewed’: [‘B00I8HW0UK’]} <br>
+| |-- key: string, the attribute name of the information, e.g., ‘also_viewed’ <br>
+| |-- value: array, array of product ids, e.g., [‘B00I8HW0UK’] <br>
+| | |-- element: string product id , e.g., ‘B00I8HW0UK’ <br>
 
 <b> The product processed table is used mainly for Task 5-6. <\b> 
 
-product_processed
-|-- asin: string, same as above
-|-- title: string, title column after imputation, e.g., ‘Intelligent Design Cotton Canvas’
-|-- category: string, category column after extraction, e.g., ‘Home & Kitchen’
+product_processed <br>
+|-- asin: string, same as above <br>
+|-- title: string, title column after imputation, e.g., ‘Intelligent Design Cotton Canvas’ <br>
+|-- category: string, category column after extraction, e.g., ‘Home & Kitchen’ <br>
 
 <b> The following tables are for training and testing <\b>
 
-ml_features_train
-|-- features: SparseVector(float), SparseVector of concatenated
-features from user and product data (all features are continuous
-features)
-|-- overall: int, review rating
-2. ml_features_test
-|-- features: SparseVector(float), same as above
-|-- overall: int, same as above
+ml_features_train <br>
+|-- features: SparseVector(float), SparseVector of concatenated <br>
+features from user and product data (all features are continuous features) <br>
+|-- overall: int, review rating <br>
+
+ml_features_test <br>
+|-- features: SparseVector(float), same as above <br>
+|-- overall: int, same as above <br>
 
 
 ## Purpose of each task 
