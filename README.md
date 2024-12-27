@@ -84,4 +84,4 @@ The purpose of task 7 is to use the training data and the newly engineered featu
 
 ### Task 8 
 
-The purpose of task 8 is to perform hyperparameter tuning to select the best max tree depth for the model developed in task 7. We created new training and validation data from the original training data using a random split of 75/25. We then trained the models with max tree depth values of 5, 7, 9, and 12 and calculated the RMSE of the validation data predictions of each of the models. We picked the best model using the recorded RMSEs and used the best model to generate predictions on the test data. 
+The purpose of task 8 is to perform hyperparameter tuning to select the best max tree depth for the decision tree. We created new training and validation data from the original training data using a random split of 75/25. We then trained the models with max tree depth values of 5, 7, 9, and 12 and calculated the RMSE of the validation data predictions of each of the models. We picked the best model using the recorded RMSEs and used the best model to generate predictions on the test data. 
